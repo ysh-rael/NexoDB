@@ -1,0 +1,11 @@
+src/
+include/
+test/
+benchmark/
+docs/
+.github/
+.clang-format
+.editorconfig
+.eslintrc.json
+CMakeLists.txt
+*.log

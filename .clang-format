@@ -1,0 +1,11 @@
+# =============================================================================
+# .clang-format
+# Estilo de formatacao do codigo C++ do projeto (baseado no Google Style,
+# com indentacao de 2 espacos e limite de 80 colunas).
+# =============================================================================
+BasedOnStyle: Google
+IndentWidth: 2
+ColumnLimit: 80
+AccessModifierOffset: -1
+AllowShortFunctionsOnASingleLine: Inline
+SortIncludes: true

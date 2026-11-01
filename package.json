@@ -1,0 +1,61 @@
+{
+  "name": "nexodb",
+  "version": "0.1.0-dev",
+  "description": "Banco de dados documental embarcado (C++) com integracao nativa ao Node.js via Node-API, API compativel com Mongoose.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "license": "MIT",
+  "author": "yshrael",
+  "homepage": "https://github.com/yshrael/NexoDB#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yshrael/NexoDB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yshrael/NexoDB/issues"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "os": ["win32", "linux", "darwin"],
+  "cpu": ["x64", "arm64"],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "build/Release/nexodb_native.node",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "install": "cmake-js compile",
+    "build": "cmake-js compile",
+    "build:debug": "cmake-js compile --debug",
+    "rebuild": "cmake-js rebuild",
+    "clean": "cmake-js clean",
+    "test": "node --test test/js/*.js",
+    "test:cpp": "ctest --test-dir build --output-on-failure",
+    "bench": "node benchmark/run-all.js",
+    "lint": "eslint lib index.js test/js benchmark --ext .js",
+    "lint:fix": "eslint lib index.js test/js benchmark --ext .js --fix",
+    "format:cpp": "find src include -regex '.*\\.\\(cpp\\|hpp\\|h\\)' -exec clang-format -i {} +"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.0.0",
+    "bindings": "^1.5.0"
+  },
+  "devDependencies": {
+    "cmake-js": "^7.3.0",
+    "eslint": "^9.9.0"
+  },
+  "keywords": [
+    "database",
+    "embedded",
+    "document-database",
+    "mongodb",
+    "mongoose",
+    "napi",
+    "native",
+    "cpp"
+  ]
+}

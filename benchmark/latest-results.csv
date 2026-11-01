@@ -1,0 +1,8 @@
+description,recordCount,operation,timeMs,opsPerSec,count
+100k_registros,100000,insert,4556.12,21949,
+100k_registros,100000,findAll,853.58,117154,100000
+100k_registros,100000,findWithFilter,628.20,159185,83852
+100k_registros,100000,findById,131.27,762,
+100k_registros,100000,updateMany,325.45,307262,58955
+100k_registros,100000,count,0.13,,100000
+100k_registros,100000,deleteMany,261.95,381755,8574

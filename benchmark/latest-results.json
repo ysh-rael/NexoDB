@@ -1,0 +1,41 @@
+[
+  {
+    "description": "100k_registros",
+    "recordCount": 100000,
+    "timestamp": "2026-11-01T05:54:34.210Z",
+    "operations": {
+      "insert": {
+        "timeMs": 4556.118,
+        "opsPerSec": 21949
+      },
+      "findAll": {
+        "timeMs": 853.5776,
+        "opsPerSec": 117154,
+        "count": 100000
+      },
+      "findWithFilter": {
+        "timeMs": 628.2008,
+        "opsPerSec": 159185,
+        "count": 83852
+      },
+      "findById": {
+        "timeMs": 131.2728,
+        "opsPerSec": 762
+      },
+      "updateMany": {
+        "timeMs": 325.4549,
+        "opsPerSec": 307262,
+        "modifiedCount": 58955
+      },
+      "count": {
+        "timeMs": 0.1342,
+        "count": 100000
+      },
+      "deleteMany": {
+        "timeMs": 261.9482,
+        "opsPerSec": 381755,
+        "deletedCount": 8574
+      }
+    }
+  }
+]

@@ -1,0 +1,74 @@
+# Node.js
+teste.js
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.local
+.env.*.local
+*.log
+dist
+db/
+# Ignore all files in the build directory except those in build/release
+build/*
+!build/release/**
+*.tsbuildinfo
+coverage
+.nyc_output
+.cache
+
+# IDE / Editor
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# C/C++
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.lib
+*.a
+*.exe
+*.out
+*.app
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+Makefile
+*.sln
+*.vcxproj*
+*.vcxproj.filters
+*.vcxproj.user
+*.opensdf
+*.sdf
+*.suo
+*.ipch
+*.tlog
+*.lastbuildstate
+
+# Testing
+*.gcno
+*.gcda
+*.gcov
+lcov.info
+*.nxdb
+
+# Benchmarks
+benchmark/results/
+
+# Documentation build
+docs/build/
+site/
